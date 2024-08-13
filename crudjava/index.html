@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: olivedrab;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 50px;
+            border: 5px solid #e5f50a;
+            border-radius: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            background-color: yellow;
+            border-radius: 1cm;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Management</h2>
+        <form id="employeeForm">
+            <input type="hidden" id="empId">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <button type="submit">Save</button>
+        </form>
+        <input type="text" id="search" placeholder="Search by Name">
+        <ul id="employeeList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
